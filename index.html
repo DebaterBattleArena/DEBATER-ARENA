@@ -5,17 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DBA | Debater Battle Arena</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="dark-mode">
     <header>
         <div class="container">
-            <a href="index.html" class="logo">
-                DEBATER BATTLE ARENA
-            </a>
+            <a href="index.html" class="logo">DBA</a>
             <nav>
                 <ul>
                     <li><a href="ranking.html" class="nav-button">RANKING</a></li>
@@ -26,66 +21,22 @@
 
     <main>
         <section class="hero-section">
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="https://via.placeholder.com/1200x675.png?text=DBA+Special+Match+Main+Event" alt="Main Event Poster">
-                    <div class="overlay-text">
-                        <h1>AARON vs HYRUKI</h1>
-                        <p>MAIN EVENT | DEATH END</p>
-                    </div>
+            <div class="carousel-container" id="hero-carousel">
                 </div>
-                <div class="carousel-slide">
-                    <img src="https://via.placeholder.com/1200x675.png?text=DBA+Special+Match+Co+Main+Event" alt="Co Main Event Poster">
-                    <div class="overlay-text">
-                        <h1>ADYY vs AHENG</h1>
-                        <p>CO MAIN EVENT</p>
-                    </div>
-                </div>
-            </div>
             <button class="prev-btn">&lt;</button>
             <button class="next-btn">&gt;</button>
         </section>
 
         <section class="ongoing-matches">
             <h2>ONGOING MATCHES</h2>
-            <div class="matches-grid">
-                <a href="profile.html" class="match-card">
-                    <img src="https://via.placeholder.com/1600x900.png?text=YULZ+vs+KAZZ" alt="Yulz vs Kazz">
-                    <div class="match-info">
-                        <h3>YULZ vs KAZZ</h3>
-                    </div>
-                </a>
-                <a href="profile.html" class="match-card">
-                    <img src="https://via.placeholder.com/1600x900.png?text=IULIAN+vs+KARIZ" alt="Iulian vs Kariz">
-                    <div class="match-info">
-                        <h3>IULIAN vs KARIZ</h3>
-                    </div>
-                </a>
-                <a href="profile.html" class="match-card">
-                    <img src="https://via.placeholder.com/1600x900.png?text=RANZT+vs+HIROO" alt="Ranzt vs Hiroo">
-                    <div class="match-info">
-                        <h3>RANZT vs HIROO</h3>
-                    </div>
-                </a>
-            </div>
+            <div class="matches-grid" id="ongoing-matches-grid">
+                </div>
         </section>
         
         <section class="past-events">
             <h2>PAST EVENTS</h2>
-            <div class="events-grid">
-                <a href="#" class="event-card">
-                    <img src="https://via.placeholder.com/400x500.png?text=DBA+1" alt="DBA 1 Poster">
-                </a>
-                <a href="#" class="event-card">
-                    <img src="https://via.placeholder.com/400x500.png?text=DBA+2+The+Moon+Fight" alt="DBA 2 Poster">
-                </a>
-                <a href="#" class="event-card">
-                    <img src="https://via.placeholder.com/400x500.png?text=DBA+3+Upcoming" alt="DBA 3 Poster">
-                </a>
-                <a href="#" class="event-card">
-                    <img src="https://via.placeholder.com/400x500.png?text=DBA+RAGNAROK+Upcoming" alt="DBA Ragnarok Poster">
-                </a>
-            </div>
+            <div class="events-grid" id="past-events-grid">
+                </div>
         </section>
     </main>
 
@@ -103,6 +54,12 @@
             </div>
         </div>
     </footer>
+    <script src="js/data.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadHomePageContent();
+        });
+    </script>
 </body>
 </html>

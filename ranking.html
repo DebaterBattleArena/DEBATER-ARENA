@@ -5,17 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DBA | Ranking</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="light-mode">
     <header class="light-mode-header">
         <div class="container">
-            <a href="index.html" class="logo">
-                DEBATER BATTLE ARENA
-            </a>
+            <a href="index.html" class="logo">DBA</a>
             <nav>
                 <ul>
                     <li><a href="ranking.html" class="nav-button active-ranking">RANKING</a></li>
@@ -25,106 +20,8 @@
     </header>
 
     <main class="ranking-page-main">
-        <section class="ranking-section">
-            <div class="ranking-division">
-                <h2>HIGH TIER RANKING</h2>
-                <div class="ranking-list">
-                    <div class="ranking-item top-ranked">
-                        <div class="rank-number">#1</div>
-                        <div class="debater-info">
-                            <span class="name">ZOGRATIS</span>
-                            <span class="country">
-                                <img src="https://flagcdn.com/id.svg" alt="Indonesia Flag"> Indonesia
-                            </span>
-                        </div>
-                        <div class="debater-image-container">
-                            <img src="https://via.placeholder.com/300x400.png?text=ZOGRATIS" alt="Zogratis">
-                        </div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="rank-number">#2</div>
-                        <div class="debater-info">
-                            <span class="name">ADYY</span>
-                            <span class="country">
-                                <img src="https://flagcdn.com/my.svg" alt="Malaysia Flag"> Malaysia
-                            </span>
-                        </div>
-                    </div>
-                    <div class="ranking-item alt-row">
-                        <div class="rank-number">#3</div>
-                        <div class="debater-info">
-                            <span class="name">LIANX</span>
-                            <span class="country">
-                                <img src="https://flagcdn.com/id.svg" alt="Indonesia Flag"> Indonesia
-                            </span>
-                        </div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="rank-number">#4</div>
-                        <div class="debater-info">
-                            <span class="name">AARON</span>
-                            <span class="country">
-                                <img src="https://flagcdn.com/mx.svg" alt="Mexico Flag"> Mexico
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ranking-division">
-                <h2>MID TIER RANKING</h2>
-                <div class="ranking-list">
-                    <div class="ranking-item top-ranked">
-                        <div class="rank-number">#1</div>
-                        <div class="debater-info">
-                            <span class="name">RANZT</span>
-                            <span class="country">
-                                <img src="https://flagcdn.com/id.svg" alt="Indonesia Flag"> Indonesia
-                            </span>
-                        </div>
-                        <div class="debater-image-container">
-                            <img src="https://via.placeholder.com/300x400.png?text=RANZT" alt="Ranzt">
-                        </div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="rank-number">#2</div>
-                        <div class="debater-info">
-                            <span class="name">HIROO</span>
-                            <span class="country">
-                                <img src="https://flagcdn.com/id.svg" alt="Indonesia Flag"> Indonesia
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ranking-division">
-                <h2>LOW TIER RANKING</h2>
-                <div class="ranking-list">
-                    <div class="ranking-item top-ranked">
-                        <div class="rank-number">#1</div>
-                        <div class="debater-info">
-                            <span class="name">SHADE</span>
-                            <span class="country">
-                                <img src="https://flagcdn.com/my.svg" alt="Malaysia Flag"> Malaysia
-                            </span>
-                        </div>
-                        <div class="debater-image-container">
-                            <img src="https://via.placeholder.com/300x400.png?text=SHADE" alt="Shade">
-                        </div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="rank-number">#2</div>
-                        <div class="debater-info">
-                            <span class="name">ARYANWT</span>
-                            <span class="country">
-                                <img src="https://flagcdn.com/id.svg" alt="Indonesia Flag"> Indonesia
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section class="ranking-section" id="ranking-sections">
+            </section>
     </main>
     
     <footer>
@@ -141,5 +38,12 @@
             </div>
         </div>
     </footer>
+    <script src="js/data.js"></script>
+    <script src="js/page-loaders.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadRankingPage();
+        });
+    </script>
 </body>
 </html>

@@ -1,97 +1,126 @@
 const dbaData = {
     debaters: [
-        { id: 'aziz-calim', name: 'AZIZ CALIM', country: 'Indonesia', flag: 'id.svg', division: 'BYON DEBATE LIGHTWEIGHT', image: 'aziz_calim_debater.jpg', profileBanner: 'aziz_calim_banner.jpg',
-            debateRecord: { win: 9, lose: 2, draw: 0 },
-            record: [
-                { opponent: 'PUTRA ABDULLAH', result: 'WIN', round: 3, time: '02:36', method: 'Logical Fallacy' },
-                { opponent: 'KABILAN JELEVAN', result: 'WIN', round: 5, time: '01:50', method: 'Superior Argument' }
-            ]
-        },
-        { id: 'putra-abdullah', name: 'PUTRA ABDULLAH', country: 'Malaysia', flag: 'my.svg', division: 'BYON DEBATE LIGHTWEIGHT', image: 'putra_abdullah_debater.jpg', profileBanner: 'putra_abdullah_banner.jpg',
-            debateRecord: { win: 5, lose: 1, draw: 0 },
-            record: [
-                { opponent: 'AZIZ CALIM', result: 'LOSE', round: 3, time: '02:36', method: 'Logical Fallacy' }
-            ]
-        },
-        { id: 'kabilan-jelevan', name: 'KABILAN JELEVAN', country: 'Malaysia', flag: 'my.svg', division: 'BYON DEBATE LIGHTWEIGHT', image: 'kabilan_jelevan_debater.jpg', profileBanner: 'kabilan_jelevan_banner.jpg',
-            debateRecord: { win: 7, lose: 1, draw: 0 },
-            record: [
-                { opponent: 'RONAL SIAHAAN', result: 'WIN', round: 4, time: '02:00', method: 'Strong Rebuttal' }
-            ]
-        },
-        { id: 'ronal-siahaan', name: 'RONAL SIAHAAN', country: 'Indonesia', flag: 'id.svg', division: 'BYON DEBATE LIGHTWEIGHT', image: 'ronal_siahaan_debater.jpg', profileBanner: 'ronal_siahaan_banner.jpg',
-            debateRecord: { win: 6, lose: 2, draw: 0 },
-            record: [
-                { opponent: 'FAHRI ALAMSYAH', result: 'WIN', round: 3, time: '02:15', method: 'Data Presentation' }
-            ]
-        },
-        { id: 'fahri-alamsyah', name: 'FAHRI ALAMSYAH', country: 'Indonesia', flag: 'id.svg', division: 'BYON DEBATE LIGHTWEIGHT', image: 'fahri_alamsyah_debater.jpg', profileBanner: 'fahri_alamsyah_banner.jpg',
-            debateRecord: { win: 8, lose: 1, draw: 0 },
-            record: [
-                { opponent: 'JAKE NAIBAHO', result: 'WIN', round: 5, time: '01:40', method: 'Charisma' }
-            ]
-        },
-        { id: 'jake-naibaho', name: 'JAKE NAIBAHO', country: 'Indonesia', flag: 'id.svg', division: 'BYON DEBATE LIGHTWEIGHT', image: 'jake_naibaho_debater.jpg', profileBanner: 'jake_naibaho_banner.jpg',
-            debateRecord: { win: 4, lose: 3, draw: 0 },
-            record: [
-                { opponent: 'AZIZ CALIM', result: 'LOSE', round: 2, time: '02:50', method: 'Counter Argument' }
-            ]
-        },
-        { id: 'yearmie-lee', name: 'YEARMIE LEE', country: 'Indonesia', flag: 'id.svg', division: 'BYON DEBATE LIGHTWEIGHT', image: 'yearmie_lee_debater.jpg', profileBanner: 'yearmie_lee_banner.jpg',
-            debateRecord: { win: 9, lose: 2, draw: 0 },
-            record: [
-                { opponent: 'JUANG KADJA K', result: 'LOSE', round: 3, time: '02:36', method: 'Superior Logic' }
-            ]
-        },
-        { id: 'juang-kadja', name: 'JUANG KADJA K', country: 'Indonesia', flag: 'id.svg', division: 'BYON DEBATE LIGHTWEIGHT', image: 'juang_kadja_debater.jpg', profileBanner: 'juang_kadja_banner.jpg',
-            debateRecord: { win: 10, lose: 1, draw: 0 },
-            record: [
-                { opponent: 'YEARMIE LEE', result: 'WIN', round: 3, time: '02:36', method: 'Superior Logic' }
-            ]
-        },
-        { id: 'jemz-mokoginta', name: 'JEMZ MOKOGINTA', country: 'Indonesia', flag: 'id.svg', division: 'BYON DEBATE WELTERWEIGHT', image: 'jemz_mokoginta_debater.jpg', profileBanner: 'jemz_mokoginta_banner.jpg',
-            debateRecord: { win: 8, lose: 0, draw: 0 },
-            record: [
-                { opponent: 'PAWITCHAYA R', result: 'WIN', round: 5, time: '01:30', method: 'Dominant Rebuttal' }
-            ]
-        },
-        { id: 'pawitchaya-r', name: 'PAWITCHAYA R', country: 'Thailand', flag: 'th.svg', division: 'BYON DEBATE WELTERWEIGHT', image: 'pawitchaya_r_debater.jpg', profileBanner: 'pawitchaya_r_banner.jpg',
-            debateRecord: { win: 6, lose: 2, draw: 0 },
-            record: [
-                { opponent: 'JEMZ MOKOGINTA', result: 'LOSE', round: 5, time: '01:30', method: 'Dominant Rebuttal' }
-            ]
-        },
+        // Indonesian Debaters
+        { id: 'hiroo', name: 'HIROO', country: 'Indonesia', flag: 'id.svg', division: 'MID TIER', status: 'ACTIVE' },
+        { id: 'ranzt', name: 'RANZT', country: 'Indonesia', flag: 'id.svg', division: 'MID TIER', status: 'ACTIVE' },
+        { id: 'zogratis', name: 'ZOGRATIS', country: 'Indonesia', flag: 'id.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        { id: 'pratama', name: 'PRATAMA', country: 'Indonesia', flag: 'id.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        { id: 'aheng', name: 'AHENG', country: 'Indonesia', flag: 'id.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        { id: 'aryanwt', name: 'ARYANWT', country: 'Indonesia', flag: 'id.svg', division: 'LOW TIER', status: 'ACTIVE' },
+        { id: 'thinzel', name: 'THINZEL', country: 'Indonesia', flag: 'id.svg', division: 'LOW TIER', status: 'ACTIVE' },
+        { id: 'lianx', name: 'LIANX', country: 'Indonesia', flag: 'id.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        { id: 'valen', name: 'VALEN', country: 'Indonesia', flag: 'id.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+        { id: 'kureji', name: 'KUREJI', country: 'Indonesia', flag: 'id.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+        { id: 'kariz', name: 'KARIZ', country: 'Indonesia', flag: 'id.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        { id: 'farras', name: 'FARRAS', country: 'Indonesia', flag: 'id.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+
+        // Malaysian Debaters
+        { id: 'adyy', name: 'ADYY', country: 'Malaysia', flag: 'my.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        { id: 'ryuu', name: 'RYUU', country: 'Malaysia', flag: 'my.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        { id: 'muchibei', name: 'MUCHIBEI', country: 'Malaysia', flag: 'my.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        { id: 'renji', name: 'RENJI', country: 'Malaysia', flag: 'my.svg', division: 'MID TIER', status: 'ACTIVE' },
+        { id: 'rim', name: 'RIM', country: 'Malaysia', flag: 'my.svg', division: 'LOW TIER', status: 'ACTIVE' },
+        { id: 'shade', name: 'SHADE', country: 'Malaysia', flag: 'my.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        { id: 'kyuki', name: 'KYUKI', country: 'Malaysia', flag: 'my.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+
+        // Vietnamese Debaters
+        { id: 'klein', name: 'KLEIN', country: 'Vietnam', flag: 'vn.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+        
+        // Philippine Debaters
+        { id: 'kaz', name: 'KAZ', country: 'Philippines', flag: 'ph.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+        
+        // Mexican Debaters
+        { id: 'aaron', name: 'AARON', country: 'Mexico', flag: 'mx.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        
+        // Brazilian Debaters
+        { id: 'xavier', name: 'XAVIER', country: 'Brazil', flag: 'br.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+        { id: 'mikael', name: 'MIKAEL', country: 'Brazil', flag: 'br.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+        
+        // Canadian Debaters
+        { id: 'rabbitto', name: 'RABBITTO', country: 'Canada', flag: 'ca.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+        
+        // Italian Debaters
+        { id: 'hyruki', name: 'HYRUKI', country: 'Italy', flag: 'it.svg', division: 'HIGH TIER', status: 'ACTIVE' },
+        
+        // French Debaters
+        { id: 'larnex', name: 'LARNEX', country: 'France', flag: 'fr.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+        
+        // Romanian Debaters
+        { id: 'iulian', name: 'IULIAN', country: 'Romania', flag: 'ro.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+        
+        // Russian Debaters
+        { id: 'homura-kin', name: 'HOMURA KIN', country: 'Russia', flag: 'ru.svg', division: 'UNKNOWN', status: 'ACTIVE' },
+        
+        // Additional debaters from matches
+        { id: 'raju', name: 'RAJU', country: 'Indonesia', flag: 'id.svg', division: 'HIGH TIER', status: 'INACTIVE' },
+        { id: 'yulz', name: 'YULZ', country: 'Indonesia', flag: 'id.svg', division: 'MID TIER', status: 'ACTIVE' },
     ],
 
     rankings: {
-        'BYON DEBATE LIGHTWEIGHT (61KG)': [
-            { rank: 1, id: 'aziz-calim' },
-            { rank: 2, id: 'putra-abdullah' },
-            { rank: 3, id: 'kabilan-jelevan' },
-            { rank: 4, id: 'ronal-siahaan' },
-            { rank: 5, id: 'fahri-alamsyah' },
-            { rank: 6, id: 'jake-naibaho' },
+        'HIGH TIER': [
+            { rank: 1, id: 'zogratis' },
+            { rank: 2, id: 'adyy' },
+            { rank: 3, id: 'muchibei' },
+            { rank: 4, id: 'lianx' },
+            { rank: 5, id: 'ryuu' },
+            { rank: 6, id: 'kyuki' },
+            { rank: 7, id: 'aheng' },
+            { rank: 8, id: 'pratama' },
+            { rank: 9, id: 'aaron' },
+            { rank: 10, id: 'hyruki' },
+            { rank: 11, id: 'kariz' },
+            { rank: 12, id: 'shade' }
         ],
-        'BYON DEBATE WELTERWEIGHT (77KG)': [
-            { rank: 1, id: 'jemz-mokoginta' },
-            { rank: 2, id: 'pawitchaya-r' }
+        'MID TIER': [
+            { rank: 1, id: 'ranzt' },
+            { rank: 2, id: 'hiroo' },
+            { rank: 3, id: 'renji' },
+            { rank: 4, id: 'yulz' }
+        ],
+        'LOW TIER': [
+            { rank: 1, id: 'aryanwt' },
+            { rank: 2, id: 'thinzel' },
+            { rank: 3, id: 'rim' }
         ]
     },
 
     events: {
         ongoing: [
-            { title: 'AZIZ CALIM vs PUTRA ABDULLAH', subtitle: 'NATIONAL TITLE DEBATE | THEME: ARTIFICIAL INTELLIGENCE ETHICS', id: 'aziz-vs-putra',
-                debater1: 'aziz-calim', debater2: 'putra-abdullah',
-                date: '28 JUNI 2025', venue: 'TENNIS INDOOR SENAYAN', poster: 'aziz-putra-ongoing.jpg' },
-            { title: 'JEMZ MOKOGINTA vs PAWITCHAYA R', subtitle: 'INTERNATIONAL FRIENDLY | THEME: GLOBAL CLIMATE POLICY', id: 'jemz-vs-pawitchaya',
-                debater1: 'jemz-mokoginta', debater2: 'pawitchaya-r',
-                date: '15 JULI 2025', venue: 'BALAI SIDANG JAKARTA', poster: 'jemz-pawitchaya-ongoing.jpg' },
+            { title: 'RANZT vs HIROO', date: 'COMING SOON', venue: 'TBA', poster: 'ranzt-hiroo-ongoing.jpg' },
+            { title: 'ADYY vs AHENG', subtitle: 'CO-MAIN EVENT', date: 'COMING SOON', venue: 'TBA', poster: 'adyy-aheng-ongoing.jpg' },
+            { title: 'AARON vs HYRUKI', subtitle: 'MAIN EVENT', date: 'COMING SOON', venue: 'TBA', poster: 'aaron-hyruki-ongoing.jpg' },
+            { title: 'IULIAN vs KARIZ', date: '25 JUNI 2025', venue: 'TBA', poster: 'iulian-kariz-ongoing.jpg' },
         ],
         past: [
-            { title: 'DBA SHOWCASE VOL. 1', date: '10 DESEMBER 2024', poster: 'dba-showcase1.jpg' },
-            { title: 'DBA: THE BEGINNING', date: '22 AGUSTUS 2024', poster: 'dba-beginning.jpg' },
-            { title: 'DBA: RISING STARS', date: '05 APRIL 2024', poster: 'dba-risingstars.jpg' },
-            { title: 'DBA: GRAND FINALE', date: '01 FEBRUARI 2024', poster: 'dba-grandfinale.jpg' },
+            { title: 'DBA 2: THE MOON FIGHT', date: '10 AGUSTUS 2024', poster: 'dba2-past.jpg' },
+            { title: 'DBA 1: INDONESIA VS MALAYSIA', date: '15 JUNI 2024', poster: 'dba1-past.jpg' }
+        ],
+        upcoming: [
+            { title: 'DBA 3', date: 'TBA', poster: 'dba3-upcoming.jpg' },
+            { title: 'DBA RAGNAROK', date: 'TBA', poster: 'dba-ragnarok-upcoming.jpg' },
+            { title: 'DBA BATTLE MEMES', date: 'TBA', poster: 'dba-memes-upcoming.jpg' },
+            { title: 'DBA 4', date: 'TBA', poster: 'dba4-upcoming.jpg' }
         ]
-    }
+    },
+
+    matches: [
+        // DBA 1
+        { event: 'DBA 1', debaters: ['hiroo', 'renji'], winner: 'hiroo', result: 'Win Hiroo', division: 'Mid Tier' },
+        { event: 'DBA 1', debaters: ['zogratis', 'muchibei'], winner: 'zogratis', result: 'Win Zogratis', division: 'High Tier' },
+        { event: 'DBA 1', debaters: ['aryanwt', 'rim'], winner: 'aryanwt', result: 'Win Aryanwt', division: 'Low Tier' },
+        { event: 'DBA 1', debaters: ['thinzel', 'shade'], winner: 'shade', result: 'Win Shade', division: 'Low Tier' },
+        { event: 'DBA 1', debaters: ['ranzt', 'ryuu'], winner: 'ranzt', result: 'Win Ranzt', division: 'Mid Tier' },
+        { event: 'DBA 1', debaters: ['lianx', 'adyy'], winner: 'lianx', result: 'Win Lianx', division: 'High Tier' },
+
+        // DBA 2
+        { event: 'DBA 2', debaters: ['raju', 'ryuu'], winner: 'ryuu', result: 'Win Ryuu', division: 'High Tier' },
+        { event: 'DBA 2', debaters: ['shade', 'kyuki'], winner: 'kyuki', result: 'Win Kyuki', division: 'High Tier' },
+        { event: 'DBA 2', debaters: ['aheng', 'pratama'], winner: 'pratama', result: 'Win Pratama', division: 'High Tier' },
+        { event: 'DBA 2', debaters: ['adyy', 'zogratis'], winner: 'adyy', result: 'Win Adyy', division: 'High Tier' },
+        { event: 'DBA 2', debaters: ['aryanwt', 'aaron'], winner: 'aaron', result: 'Win Aaron', division: 'High Tier' },
+
+        // DBA Special Match
+        { event: 'DBA SPECIAL MATCH', debaters: ['yulz', 'kaz'], winner: 'yulz', result: 'Win Yulz', division: 'Mid Tier' },
+        { event: 'DBA SPECIAL MATCH', debaters: ['iulian', 'kariz'], winner: 'kariz', result: 'Win Kariz', division: 'High Tier' },
+    ]
 };

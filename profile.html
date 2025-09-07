@@ -3,86 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBA | Debater Profile</title>
+    <title>BYON. | Profile</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="dark-mode">
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">DBA</a>
+        <div class="header-container">
+            <span class="logo">BYON.</span>
             <nav>
                 <ul>
-                    <li><a href="ranking.html" class="nav-button">RANKING</a></li>
+                    <li><a href="rankings.html" class="nav-link">RANKINGS</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="debater-profile">
-            <div class="profile-header" id="profile-header">
-                <div class="profile-info-box">
-                    <div class="division-status">
-                        <div class="info-box-item">
-                            <span class="label">DIVISION</span>
-                            <span class="division-box" id="debater-division"></span>
-                        </div>
-                        <div class="info-box-item">
-                            <span class="label">STATUS</span>
-                            <span class="status-box" id="debater-status"></span>
-                        </div>
-                    </div>
-                    <h2 id="debater-name"></h2>
-                    <p class="country-info">
-                        <img id="debater-flag" src="" alt="" class="flag">
-                        <span id="debater-country"></span>
-                    </p>
-                    <div class="debate-record-box">
-                        <span class="record-label">DEBATE RECORD</span>
-                        <div class="records">
-                            <div class="record win"><span>WIN</span><span id="record-win"></span></div>
-                            <div class="record lose"><span>LOSS</span><span id="record-lose"></span></div>
-                            <div class="record draw"><span>DRAW</span><span id="record-draw"></span></div>
-                        </div>
-                    </div>
-                </div>
+        <div id="profile-banner">
             </div>
-            
-            <section class="dba-record-section">
-                <div class="record-title-bg">
-                    <span class="record-title-text">DBA RECORD</span>
-                </div>
-                <div class="match-history-grid" id="match-history-grid">
-                    </div>
-            </section>
 
-            <section class="achievement-section">
-                <div class="achievement-title-bg">
-                    <span class="achievement-title-text">ACHIEVEMENT</span>
+        <section class="byon-record-section">
+            <div class="section-title">
+                <h2>BYON RECORD</h2>
+            </div>
+            <div class="record-grid" id="byon-record-grid">
                 </div>
-                <div class="achievement-box" id="achievement-box">
-                    </div>
-            </section>
+        </section>
+
+        <section class="achievement-section">
+            <div class="section-title">
+                <h2>ACHIEVEMENT</h2>
+            </div>
+            <div class="achievement-container" id="achievement-container">
+                </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-container">
-            <div class="footer-info">
-                <h3>DEBATER BATTLE ARENA</h3>
-                <p>An innovative platform for argumentative battles.</p>
+            <div class="footer-column">
+                <span class="logo">BYON.</span>
+                <p>Byon Combat is committed to fostering growth within the combat sports community, offering fans exhilarating experiences and unparalleled access to the thrill of live competition.As we continue to evolve, our goal remains steadfast:</p>
             </div>
-            <div class="footer-social">
+            <div class="footer-column">
+                <h4>PAGES</h4>
+                <ul>
+                    <li>HOME</li>
+                    <li>MERCHANDISE</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li>OFFICIAL@BYONCOMBAT.COM</li>
+                    <li>BEKASI, INDONESIA</li>
+                </ul>
+            </div>
+            <div class="footer-column">
                 <h4>SOCIAL MEDIA</h4>
-                <a href="#">INSTAGRAM</a>
-                <a href="#">YOUTUBE</a>
-                <a href="#">TIKTOK</a>
+                <ul>
+                    <li>INSTAGRAM</li>
+                    <li>YOUTUBE</li>
+                    <li>TIKTOK</li>
+                </ul>
             </div>
+        </div>
+        <div class="copyright">
+            © 2025 Byon Combat all rights reserved
         </div>
     </footer>
     <script src="js/data.js"></script>
-    <script src="js/page-loaders.js"></script>
+    <script src="js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             loadProfilePage();

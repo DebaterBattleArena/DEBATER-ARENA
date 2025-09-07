@@ -3,62 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBA | Debater Battle Arena</title>
+    <title>BYON. | Combat</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="dark-mode">
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">DBA</a>
+        <div class="header-container">
+            <span class="logo">BYON.</span>
             <nav>
                 <ul>
-                    <li><a href="ranking.html" class="nav-button">RANKING</a></li>
+                    <li><a href="rankings.html" class="nav-link">RANKINGS</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="carousel-container" id="hero-carousel">
+        <section class="main-carousel" id="main-carousel">
+            </section>
+
+        <section class="events-section" id="ongoing-matches">
+            <h2>ONGOING MATCHES</h2>
+            <div class="matches-grid">
                 </div>
-            <button class="prev-btn">&lt;</button>
-            <button class="next-btn">&gt;</button>
         </section>
 
-        <section class="ongoing-matches">
-            <h2>ONGOING MATCHES</h2>
-            <div class="matches-grid" id="ongoing-matches-grid">
-                </div>
-        </section>
-        
-        <section class="past-events">
+        <section class="events-section" id="past-events">
             <h2>PAST EVENTS</h2>
-            <div class="events-grid" id="past-events-grid">
+            <div class="past-events-grid">
                 </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-container">
-            <div class="footer-info">
-                <h3>DEBATER BATTLE ARENA</h3>
-                <p>An innovative platform for argumentative battles.</p>
+            <div class="footer-column">
+                <span class="logo">BYON.</span>
+                <p>Byon Combat is committed to fostering growth within the combat sports community, offering fans exhilarating experiences and unparalleled access to the thrill of live competition.As we continue to evolve, our goal remains steadfast:</p>
             </div>
-            <div class="footer-social">
+            <div class="footer-column">
+                <h4>PAGES</h4>
+                <ul>
+                    <li>HOME</li>
+                    <li>MERCHANDISE</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li>OFFICIAL@BYONCOMBAT.COM</li>
+                    <li>BEKASI, INDONESIA</li>
+                </ul>
+            </div>
+            <div class="footer-column">
                 <h4>SOCIAL MEDIA</h4>
-                <a href="#">INSTAGRAM</a>
-                <a href="#">YOUTUBE</a>
-                <a href="#">TIKTOK</a>
+                <ul>
+                    <li>INSTAGRAM</li>
+                    <li>YOUTUBE</li>
+                    <li>TIKTOK</li>
+                </ul>
             </div>
         </div>
+        <div class="copyright">
+            © 2025 Byon Combat all rights reserved
+        </div>
     </footer>
+
     <script src="js/data.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            loadHomePageContent();
+            loadHomePage();
         });
     </script>
 </body>

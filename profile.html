@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBA | HIROO Profile</title>
+    <title>DBA | Debater Profile</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="dark-mode">
     <header>
         <div class="container">
-            <a href="index.html" class="logo">
-                DEBATER BATTLE ARENA
-            </a>
+            <a href="index.html" class="logo">DBA</a>
             <nav>
                 <ul>
                     <li><a href="ranking.html" class="nav-button">RANKING</a></li>
@@ -26,37 +21,29 @@
 
     <main>
         <section class="debater-profile">
-            <div class="profile-header" style="background-image: url('https://via.placeholder.com/900x600.png?text=HIROO');">
+            <div class="profile-header" id="profile-header">
                 <div class="profile-info-box">
                     <div class="division-status">
                         <div class="info-box-item">
                             <span class="label">DIVISION</span>
-                            <span class="division-box">MID TIER</span>
+                            <span class="division-box" id="debater-division"></span>
                         </div>
                         <div class="info-box-item">
                             <span class="label">STATUS</span>
-                            <span class="status-box active">ACTIVE</span>
+                            <span class="status-box" id="debater-status"></span>
                         </div>
                     </div>
-                    <h2>HIROO</h2>
+                    <h2 id="debater-name"></h2>
                     <p class="country-info">
-                        <img src="https://flagcdn.com/id.svg" alt="Indonesia Flag" class="flag"> Indonesia
+                        <img id="debater-flag" src="" alt="" class="flag">
+                        <span id="debater-country"></span>
                     </p>
                     <div class="debate-record-box">
                         <span class="record-label">DEBATE RECORD</span>
                         <div class="records">
-                            <div class="record win">
-                                <span>WIN</span>
-                                <span>1</span>
-                            </div>
-                            <div class="record lose">
-                                <span>LOSS</span>
-                                <span>0</span>
-                            </div>
-                            <div class="record draw">
-                                <span>DRAW</span>
-                                <span>0</span>
-                            </div>
+                            <div class="record win"><span>WIN</span><span id="record-win"></span></div>
+                            <div class="record lose"><span>LOSS</span><span id="record-lose"></span></div>
+                            <div class="record draw"><span>DRAW</span><span id="record-draw"></span></div>
                         </div>
                     </div>
                 </div>
@@ -66,27 +53,16 @@
                 <div class="record-title-bg">
                     <span class="record-title-text">DBA RECORD</span>
                 </div>
-                <div class="match-history-grid">
-                    <div class="match-history-card win">
-                        <div class="match-info-card">
-                            <span>vs RENJI</span>
-                            <span>Win</span>
-                            <span>DBA 1</span>
-                        </div>
+                <div class="match-history-grid" id="match-history-grid">
                     </div>
-                </div>
             </section>
 
             <section class="achievement-section">
                 <div class="achievement-title-bg">
                     <span class="achievement-title-text">ACHIEVEMENT</span>
                 </div>
-                <div class="achievement-box">
-                    <div class="achievement-item">
-                        <p>DBA 1 Winner</p>
-                        <p>DECEMBER 2023</p>
+                <div class="achievement-box" id="achievement-box">
                     </div>
-                </div>
             </section>
         </section>
     </main>
@@ -105,5 +81,12 @@
             </div>
         </div>
     </footer>
+    <script src="js/data.js"></script>
+    <script src="js/page-loaders.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProfilePage();
+        });
+    </script>
 </body>
 </html>
